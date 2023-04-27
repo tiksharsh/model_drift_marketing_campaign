@@ -1,0 +1,2875 @@
+datasets {
+  num_examples: 494
+  features {
+    num_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      mean: 1969.8076923076924
+      std_dev: 11.481963568445373
+      min: 1945.0
+      median: 1971.0
+      max: 1996.0
+      histograms {
+        buckets {
+          low_value: 1945.0
+          high_value: 1950.1
+          sample_count: 22.049999999999955
+        }
+        buckets {
+          low_value: 1950.1
+          high_value: 1955.2
+          sample_count: 43.05000000000005
+        }
+        buckets {
+          low_value: 1955.2
+          high_value: 1960.3
+          sample_count: 63.04999999999998
+        }
+        buckets {
+          low_value: 1960.3
+          high_value: 1965.4
+          sample_count: 49.05000000000016
+        }
+        buckets {
+          low_value: 1965.4
+          high_value: 1970.5
+          sample_count: 63.04358974358973
+        }
+        buckets {
+          low_value: 1970.5
+          high_value: 1975.6
+          sample_count: 91.05641025641046
+        }
+        buckets {
+          low_value: 1975.6
+          high_value: 1980.7
+          sample_count: 76.02666666666671
+        }
+        buckets {
+          low_value: 1980.7
+          high_value: 1985.8
+          sample_count: 39.054285714285676
+        }
+        buckets {
+          low_value: 1985.8
+          high_value: 1990.9
+          sample_count: 34.06904761904769
+        }
+        buckets {
+          low_value: 1990.9
+          high_value: 1996.0
+          sample_count: 13.549999999999956
+        }
+      }
+      histograms {
+        buckets {
+          low_value: 1945.0
+          high_value: 1954.0
+          sample_count: 55.0
+        }
+        buckets {
+          low_value: 1954.0
+          high_value: 1958.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 1958.0
+          high_value: 1963.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 1963.0
+          high_value: 1968.0
+          sample_count: 53.0
+        }
+        buckets {
+          low_value: 1968.0
+          high_value: 1971.0
+          sample_count: 52.0
+        }
+        buckets {
+          low_value: 1971.0
+          high_value: 1974.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 1974.0
+          high_value: 1976.0
+          sample_count: 43.0
+        }
+        buckets {
+          low_value: 1976.0
+          high_value: 1980.0
+          sample_count: 55.0
+        }
+        buckets {
+          low_value: 1980.0
+          high_value: 1985.0
+          sample_count: 39.0
+        }
+        buckets {
+          low_value: 1985.0
+          high_value: 1996.0
+          sample_count: 48.0
+        }
+        type: QUANTILES
+      }
+    }
+    path {
+      step: "Year_Birth"
+    }
+  }
+  features {
+    type: STRING
+    string_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      unique: 5
+      top_values {
+        value: "Graduation"
+        frequency: 249.0
+      }
+      top_values {
+        value: "PhD"
+        frequency: 107.0
+      }
+      top_values {
+        value: "Master"
+        frequency: 64.0
+      }
+      top_values {
+        value: "2n Cycle"
+        frequency: 53.0
+      }
+      top_values {
+        value: "Basic"
+        frequency: 21.0
+      }
+      avg_length: 7.5384617
+      rank_histogram {
+        buckets {
+          label: "Graduation"
+          sample_count: 249.0
+        }
+        buckets {
+          low_rank: 1
+          high_rank: 1
+          label: "PhD"
+          sample_count: 107.0
+        }
+        buckets {
+          low_rank: 2
+          high_rank: 2
+          label: "Master"
+          sample_count: 64.0
+        }
+        buckets {
+          low_rank: 3
+          high_rank: 3
+          label: "2n Cycle"
+          sample_count: 53.0
+        }
+        buckets {
+          low_rank: 4
+          high_rank: 4
+          label: "Basic"
+          sample_count: 21.0
+        }
+      }
+    }
+    path {
+      step: "Education"
+    }
+  }
+  features {
+    type: STRING
+    string_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      unique: 7
+      top_values {
+        value: "Married"
+        frequency: 189.0
+      }
+      top_values {
+        value: "Together"
+        frequency: 127.0
+      }
+      top_values {
+        value: "Single"
+        frequency: 106.0
+      }
+      top_values {
+        value: "Divorced"
+        frequency: 48.0
+      }
+      top_values {
+        value: "Widow"
+        frequency: 21.0
+      }
+      top_values {
+        value: "YOLO"
+        frequency: 2.0
+      }
+      top_values {
+        value: "Absurd"
+        frequency: 1.0
+      }
+      avg_length: 7.040486
+      rank_histogram {
+        buckets {
+          label: "Married"
+          sample_count: 189.0
+        }
+        buckets {
+          low_rank: 1
+          high_rank: 1
+          label: "Together"
+          sample_count: 127.0
+        }
+        buckets {
+          low_rank: 2
+          high_rank: 2
+          label: "Single"
+          sample_count: 106.0
+        }
+        buckets {
+          low_rank: 3
+          high_rank: 3
+          label: "Divorced"
+          sample_count: 48.0
+        }
+        buckets {
+          low_rank: 4
+          high_rank: 4
+          label: "Widow"
+          sample_count: 21.0
+        }
+        buckets {
+          low_rank: 5
+          high_rank: 5
+          label: "YOLO"
+          sample_count: 2.0
+        }
+        buckets {
+          low_rank: 6
+          high_rank: 6
+          label: "Absurd"
+          sample_count: 1.0
+        }
+      }
+    }
+    path {
+      step: "Marital_Status"
+    }
+  }
+  features {
+    type: FLOAT
+    num_stats {
+      common_stats {
+        num_non_missing: 490
+        num_missing: 4
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.0
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.0
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.0
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.0
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.0
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.0
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.0
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.0
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.0
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.0
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 490
+      }
+      mean: 51150.23673469388
+      std_dev: 21485.585991663833
+      min: 6835.0
+      median: 52117.0
+      max: 160803.0
+      histograms {
+        buckets {
+          low_value: 6835.0
+          high_value: 22231.8
+          sample_count: 43.38354838709677
+        }
+        buckets {
+          low_value: 22231.8
+          high_value: 37628.6
+          sample_count: 100.09870967741934
+        }
+        buckets {
+          low_value: 37628.6
+          high_value: 53025.399999999994
+          sample_count: 111.6196874607757
+        }
+        buckets {
+          low_value: 53025.399999999994
+          high_value: 68422.2
+          sample_count: 122.26175310484516
+        }
+        buckets {
+          low_value: 68422.2
+          high_value: 83819.0
+          sample_count: 94.12034392305455
+        }
+        buckets {
+          low_value: 83819.0
+          high_value: 99215.79999999999
+          sample_count: 16.793954732285812
+        }
+        buckets {
+          low_value: 99215.79999999999
+          high_value: 114612.59999999999
+          sample_count: 0.7927846777010248
+        }
+        buckets {
+          low_value: 114612.59999999999
+          high_value: 130009.4
+          sample_count: 0.08751712338500191
+        }
+        buckets {
+          low_value: 130009.4
+          high_value: 145406.19999999998
+          sample_count: 0.08751712338500184
+        }
+        buckets {
+          low_value: 145406.19999999998
+          high_value: 160803.0
+          sample_count: 0.7541837900516686
+        }
+      }
+      histograms {
+        buckets {
+          low_value: 6835.0
+          high_value: 23331.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 23331.0
+          high_value: 30522.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 30522.0
+          high_value: 37758.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 37758.0
+          high_value: 44953.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 44953.0
+          high_value: 52117.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 52117.0
+          high_value: 58554.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 58554.0
+          high_value: 64355.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 64355.0
+          high_value: 70596.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 70596.0
+          high_value: 79244.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 79244.0
+          high_value: 160803.0
+          sample_count: 48.0
+        }
+        type: QUANTILES
+      }
+    }
+    path {
+      step: "Income"
+    }
+  }
+  features {
+    num_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      mean: 0.402834008097166
+      std_dev: 0.5146360539189292
+      num_zeros: 301
+      max: 2.0
+      histograms {
+        buckets {
+          high_value: 0.2
+          sample_count: 301.0989417989414
+        }
+        buckets {
+          low_value: 0.2
+          high_value: 0.4
+          sample_count: 0.09894179894179894
+        }
+        buckets {
+          low_value: 0.4
+          high_value: 0.6000000000000001
+          sample_count: 0.09894179894179897
+        }
+        buckets {
+          low_value: 0.6000000000000001
+          high_value: 0.8
+          sample_count: 0.09894179894179891
+        }
+        buckets {
+          low_value: 0.8
+          high_value: 1.0
+          sample_count: 186.60423280423248
+        }
+        buckets {
+          low_value: 1.0
+          high_value: 1.2000000000000002
+          sample_count: 0.0923076923076924
+        }
+        buckets {
+          low_value: 1.2000000000000002
+          high_value: 1.4000000000000001
+          sample_count: 0.0923076923076923
+        }
+        buckets {
+          low_value: 1.4000000000000001
+          high_value: 1.6
+          sample_count: 0.0923076923076923
+        }
+        buckets {
+          low_value: 1.6
+          high_value: 1.8
+          sample_count: 0.0923076923076923
+        }
+        buckets {
+          low_value: 1.8
+          high_value: 2.0
+          sample_count: 5.630769230769232
+        }
+      }
+      histograms {
+        buckets {
+          sample_count: 50.166666666666664
+        }
+        buckets {
+          sample_count: 50.166666666666664
+        }
+        buckets {
+          sample_count: 50.166666666666664
+        }
+        buckets {
+          sample_count: 50.166666666666664
+        }
+        buckets {
+          sample_count: 50.166666666666664
+        }
+        buckets {
+          sample_count: 50.166666666666664
+        }
+        buckets {
+          high_value: 1.0
+          sample_count: 62.333333333333336
+        }
+        buckets {
+          low_value: 1.0
+          high_value: 1.0
+          sample_count: 62.333333333333336
+        }
+        buckets {
+          low_value: 1.0
+          high_value: 1.0
+          sample_count: 62.333333333333336
+        }
+        buckets {
+          low_value: 1.0
+          high_value: 2.0
+          sample_count: 6.0
+        }
+        type: QUANTILES
+      }
+    }
+    path {
+      step: "Kidhome"
+    }
+  }
+  features {
+    num_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      mean: 50.044534412955464
+      std_dev: 29.305697869479868
+      num_zeros: 4
+      median: 51.0
+      max: 99.0
+      histograms {
+        buckets {
+          high_value: 9.9
+          sample_count: 53.45000000000003
+        }
+        buckets {
+          low_value: 9.9
+          high_value: 19.8
+          sample_count: 45.94999999999998
+        }
+        buckets {
+          low_value: 19.8
+          high_value: 29.700000000000003
+          sample_count: 43.94999999999999
+        }
+        buckets {
+          low_value: 29.700000000000003
+          high_value: 39.6
+          sample_count: 55.932352941176454
+        }
+        buckets {
+          low_value: 39.6
+          high_value: 49.5
+          sample_count: 41.96764705882353
+        }
+        buckets {
+          low_value: 49.5
+          high_value: 59.400000000000006
+          sample_count: 48.95000000000002
+        }
+        buckets {
+          low_value: 59.400000000000006
+          high_value: 69.3
+          sample_count: 52.95000000000001
+        }
+        buckets {
+          low_value: 69.3
+          high_value: 79.2
+          sample_count: 44.94999999999999
+        }
+        buckets {
+          low_value: 79.2
+          high_value: 89.10000000000001
+          sample_count: 45.94999999999998
+        }
+        buckets {
+          low_value: 89.10000000000001
+          high_value: 99.0
+          sample_count: 59.95000000000002
+        }
+      }
+      histograms {
+        buckets {
+          high_value: 8.0
+          sample_count: 51.0
+        }
+        buckets {
+          low_value: 8.0
+          high_value: 19.0
+          sample_count: 48.0
+        }
+        buckets {
+          low_value: 19.0
+          high_value: 31.0
+          sample_count: 56.0
+        }
+        buckets {
+          low_value: 31.0
+          high_value: 39.0
+          sample_count: 44.0
+        }
+        buckets {
+          low_value: 39.0
+          high_value: 51.0
+          sample_count: 53.0
+        }
+        buckets {
+          low_value: 51.0
+          high_value: 61.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 61.0
+          high_value: 70.0
+          sample_count: 45.0
+        }
+        buckets {
+          low_value: 70.0
+          high_value: 81.0
+          sample_count: 53.0
+        }
+        buckets {
+          low_value: 81.0
+          high_value: 92.0
+          sample_count: 54.0
+        }
+        buckets {
+          low_value: 92.0
+          high_value: 99.0
+          sample_count: 40.0
+        }
+        type: QUANTILES
+      }
+    }
+    path {
+      step: "Recency"
+    }
+  }
+  features {
+    num_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      mean: 388.80364372469637
+      std_dev: 373.50317721209944
+      num_zeros: 2
+      median: 269.0
+      max: 1486.0
+      histograms {
+        buckets {
+          high_value: 148.6
+          sample_count: 188.25714285714278
+        }
+        buckets {
+          low_value: 148.6
+          high_value: 297.2
+          sample_count: 68.74910714285714
+        }
+        buckets {
+          low_value: 297.2
+          high_value: 445.79999999999995
+          sample_count: 40.33059210526315
+        }
+        buckets {
+          low_value: 445.79999999999995
+          high_value: 594.4
+          sample_count: 53.86315789473682
+        }
+        buckets {
+          low_value: 594.4
+          high_value: 743.0
+          sample_count: 33.000000000000014
+        }
+        buckets {
+          low_value: 743.0
+          high_value: 891.5999999999999
+          sample_count: 44.93333333333332
+        }
+        buckets {
+          low_value: 891.5999999999999
+          high_value: 1040.2
+          sample_count: 34.14000000000001
+        }
+        buckets {
+          low_value: 1040.2
+          high_value: 1188.8
+          sample_count: 17.882666666666665
+        }
+        buckets {
+          low_value: 1188.8
+          high_value: 1337.3999999999999
+          sample_count: 10.002823529411762
+        }
+        buckets {
+          low_value: 1337.3999999999999
+          high_value: 1486.0
+          sample_count: 2.84117647058824
+        }
+      }
+      histograms {
+        buckets {
+          high_value: 6.0
+          sample_count: 52.0
+        }
+        buckets {
+          low_value: 6.0
+          high_value: 22.0
+          sample_count: 47.0
+        }
+        buckets {
+          low_value: 22.0
+          high_value: 73.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 73.0
+          high_value: 160.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 160.0
+          high_value: 269.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 269.0
+          high_value: 433.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 433.0
+          high_value: 571.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 571.0
+          high_value: 778.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 778.0
+          high_value: 962.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 962.0
+          high_value: 1486.0
+          sample_count: 48.0
+        }
+        type: QUANTILES
+      }
+    }
+    path {
+      step: "MntWines"
+    }
+  }
+  features {
+    num_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      mean: 29.718623481781375
+      std_dev: 39.96840575797266
+      num_zeros: 73
+      median: 12.0
+      max: 194.0
+      histograms {
+        buckets {
+          high_value: 19.4
+          sample_count: 291.20000000000044
+        }
+        buckets {
+          low_value: 19.4
+          high_value: 38.8
+          sample_count: 73.99999999999999
+        }
+        buckets {
+          low_value: 38.8
+          high_value: 58.199999999999996
+          sample_count: 42.89999999999999
+        }
+        buckets {
+          low_value: 58.199999999999996
+          high_value: 77.6
+          sample_count: 23.0
+        }
+        buckets {
+          low_value: 77.6
+          high_value: 97.0
+          sample_count: 20.900000000000002
+        }
+        buckets {
+          low_value: 97.0
+          high_value: 116.39999999999999
+          sample_count: 16.1
+        }
+        buckets {
+          low_value: 116.39999999999999
+          high_value: 135.79999999999998
+          sample_count: 9.124999999999998
+        }
+        buckets {
+          low_value: 135.79999999999998
+          high_value: 155.2
+          sample_count: 7.800000000000001
+        }
+        buckets {
+          low_value: 155.2
+          high_value: 174.6
+          sample_count: 4.2650000000000015
+        }
+        buckets {
+          low_value: 174.6
+          high_value: 194.0
+          sample_count: 4.709999999999999
+        }
+      }
+      histograms {
+        buckets {
+          sample_count: 73.0
+        }
+        buckets {
+          high_value: 2.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 2.0
+          high_value: 4.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 4.0
+          high_value: 7.0
+          sample_count: 34.0
+        }
+        buckets {
+          low_value: 7.0
+          high_value: 12.0
+          sample_count: 43.0
+        }
+        buckets {
+          low_value: 12.0
+          high_value: 21.0
+          sample_count: 55.0
+        }
+        buckets {
+          low_value: 21.0
+          high_value: 33.0
+          sample_count: 46.0
+        }
+        buckets {
+          low_value: 33.0
+          high_value: 51.0
+          sample_count: 47.0
+        }
+        buckets {
+          low_value: 51.0
+          high_value: 89.0
+          sample_count: 48.0
+        }
+        buckets {
+          low_value: 89.0
+          high_value: 194.0
+          sample_count: 49.0
+        }
+        type: QUANTILES
+      }
+    }
+    path {
+      step: "MntFruits"
+    }
+  }
+  features {
+    num_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      mean: 197.5242914979757
+      std_dev: 245.86277569134347
+      min: 1.0
+      median: 103.0
+      max: 1622.0
+      histograms {
+        buckets {
+          low_value: 1.0
+          high_value: 163.1
+          sample_count: 318.05000000000007
+        }
+        buckets {
+          low_value: 163.1
+          high_value: 325.2
+          sample_count: 74.16666666666669
+        }
+        buckets {
+          low_value: 325.2
+          high_value: 487.29999999999995
+          sample_count: 37.11515151515151
+        }
+        buckets {
+          low_value: 487.29999999999995
+          high_value: 649.4
+          sample_count: 27.868181818181807
+        }
+        buckets {
+          low_value: 649.4
+          high_value: 811.5
+          sample_count: 17.145238095238106
+        }
+        buckets {
+          low_value: 811.5
+          high_value: 973.5999999999999
+          sample_count: 17.121428571428563
+        }
+        buckets {
+          low_value: 973.5999999999999
+          high_value: 1135.7
+          sample_count: 0.6610584518167533
+        }
+        buckets {
+          low_value: 1135.7
+          high_value: 1297.8
+          sample_count: 0.12804107424960498
+        }
+        buckets {
+          low_value: 1297.8
+          high_value: 1459.8999999999999
+          sample_count: 0.12804107424960498
+        }
+        buckets {
+          low_value: 1459.8999999999999
+          high_value: 1622.0
+          sample_count: 1.6161927330173775
+        }
+      }
+      histograms {
+        buckets {
+          low_value: 1.0
+          high_value: 9.0
+          sample_count: 51.0
+        }
+        buckets {
+          low_value: 9.0
+          high_value: 19.0
+          sample_count: 51.0
+        }
+        buckets {
+          low_value: 19.0
+          high_value: 38.0
+          sample_count: 47.0
+        }
+        buckets {
+          low_value: 38.0
+          high_value: 65.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 65.0
+          high_value: 103.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 103.0
+          high_value: 140.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 140.0
+          high_value: 217.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 217.0
+          high_value: 353.0
+          sample_count: 48.0
+        }
+        buckets {
+          low_value: 353.0
+          high_value: 553.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 553.0
+          high_value: 1622.0
+          sample_count: 48.0
+        }
+        type: QUANTILES
+      }
+    }
+    path {
+      step: "MntMeatProducts"
+    }
+  }
+  features {
+    num_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      mean: 44.473684210526315
+      std_dev: 60.68464242044974
+      num_zeros: 66
+      median: 16.0
+      max: 259.0
+      histograms {
+        buckets {
+          high_value: 25.9
+          sample_count: 292.4499999999997
+        }
+        buckets {
+          low_value: 25.9
+          high_value: 51.8
+          sample_count: 65.94999999999999
+        }
+        buckets {
+          low_value: 51.8
+          high_value: 77.69999999999999
+          sample_count: 42.025
+        }
+        buckets {
+          low_value: 77.69999999999999
+          high_value: 103.6
+          sample_count: 22.975
+        }
+        buckets {
+          low_value: 103.6
+          high_value: 129.5
+          sample_count: 12.808333333333335
+        }
+        buckets {
+          low_value: 129.5
+          high_value: 155.39999999999998
+          sample_count: 17.031666666666663
+        }
+        buckets {
+          low_value: 155.39999999999998
+          high_value: 181.29999999999998
+          sample_count: 9.084999999999997
+        }
+        buckets {
+          low_value: 181.29999999999998
+          high_value: 207.2
+          sample_count: 9.774999999999999
+        }
+        buckets {
+          low_value: 207.2
+          high_value: 233.1
+          sample_count: 17.010000000000005
+        }
+        buckets {
+          low_value: 233.1
+          high_value: 259.0
+          sample_count: 4.89
+        }
+      }
+      histograms {
+        buckets {
+          sample_count: 66.0
+        }
+        buckets {
+          high_value: 3.0
+          sample_count: 37.0
+        }
+        buckets {
+          low_value: 3.0
+          high_value: 6.0
+          sample_count: 46.0
+        }
+        buckets {
+          low_value: 6.0
+          high_value: 11.0
+          sample_count: 53.0
+        }
+        buckets {
+          low_value: 11.0
+          high_value: 16.0
+          sample_count: 47.0
+        }
+        buckets {
+          low_value: 16.0
+          high_value: 27.0
+          sample_count: 48.0
+        }
+        buckets {
+          low_value: 27.0
+          high_value: 46.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 46.0
+          high_value: 75.0
+          sample_count: 51.0
+        }
+        buckets {
+          low_value: 75.0
+          high_value: 145.0
+          sample_count: 47.0
+        }
+        buckets {
+          low_value: 145.0
+          high_value: 259.0
+          sample_count: 49.0
+        }
+        type: QUANTILES
+      }
+    }
+    path {
+      step: "MntFishProducts"
+    }
+  }
+  features {
+    num_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      mean: 31.951417004048583
+      std_dev: 43.93782029923617
+      num_zeros: 83
+      median: 12.0
+      max: 194.0
+      histograms {
+        buckets {
+          high_value: 19.4
+          sample_count: 294.19999999999993
+        }
+        buckets {
+          low_value: 19.4
+          high_value: 38.8
+          sample_count: 64.19999999999999
+        }
+        buckets {
+          low_value: 38.8
+          high_value: 58.199999999999996
+          sample_count: 41.65
+        }
+        buckets {
+          low_value: 58.199999999999996
+          high_value: 77.6
+          sample_count: 19.35
+        }
+        buckets {
+          low_value: 77.6
+          high_value: 97.0
+          sample_count: 19.6
+        }
+        buckets {
+          low_value: 97.0
+          high_value: 116.39999999999999
+          sample_count: 15.1
+        }
+        buckets {
+          low_value: 116.39999999999999
+          high_value: 135.79999999999998
+          sample_count: 14.2
+        }
+        buckets {
+          low_value: 135.79999999999998
+          high_value: 155.2
+          sample_count: 12.050000000000002
+        }
+        buckets {
+          low_value: 155.2
+          high_value: 174.6
+          sample_count: 8.975
+        }
+        buckets {
+          low_value: 174.6
+          high_value: 194.0
+          sample_count: 4.675000000000001
+        }
+      }
+      histograms {
+        buckets {
+          sample_count: 83.0
+        }
+        buckets {
+          high_value: 1.0
+          sample_count: 25.0
+        }
+        buckets {
+          low_value: 1.0
+          high_value: 4.0
+          sample_count: 58.0
+        }
+        buckets {
+          low_value: 4.0
+          high_value: 7.0
+          sample_count: 38.0
+        }
+        buckets {
+          low_value: 7.0
+          high_value: 12.0
+          sample_count: 53.0
+        }
+        buckets {
+          low_value: 12.0
+          high_value: 20.0
+          sample_count: 40.0
+        }
+        buckets {
+          low_value: 20.0
+          high_value: 33.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 33.0
+          high_value: 53.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 53.0
+          high_value: 102.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 102.0
+          high_value: 194.0
+          sample_count: 49.0
+        }
+        type: QUANTILES
+      }
+    }
+    path {
+      step: "MntSweetProducts"
+    }
+  }
+  features {
+    num_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      mean: 53.012145748987855
+      std_dev: 54.02323550046101
+      num_zeros: 7
+      median: 34.0
+      max: 245.0
+      histograms {
+        buckets {
+          high_value: 24.5
+          sample_count: 189.25000000000026
+        }
+        buckets {
+          low_value: 24.5
+          high_value: 49.0
+          sample_count: 134.75000000000003
+        }
+        buckets {
+          low_value: 49.0
+          high_value: 73.5
+          sample_count: 47.250000000000014
+        }
+        buckets {
+          low_value: 73.5
+          high_value: 98.0
+          sample_count: 32.0
+        }
+        buckets {
+          low_value: 98.0
+          high_value: 122.5
+          sample_count: 30.875
+        }
+        buckets {
+          low_value: 122.5
+          high_value: 147.0
+          sample_count: 19.874999999999996
+        }
+        buckets {
+          low_value: 147.0
+          high_value: 171.5
+          sample_count: 9.477272727272727
+        }
+        buckets {
+          low_value: 171.5
+          high_value: 196.0
+          sample_count: 18.808441558441558
+        }
+        buckets {
+          low_value: 196.0
+          high_value: 220.5
+          sample_count: 4.864285714285715
+        }
+        buckets {
+          low_value: 220.5
+          high_value: 245.0
+          sample_count: 6.849999999999999
+        }
+      }
+      histograms {
+        buckets {
+          high_value: 5.0
+          sample_count: 58.0
+        }
+        buckets {
+          low_value: 5.0
+          high_value: 12.0
+          sample_count: 53.0
+        }
+        buckets {
+          low_value: 12.0
+          high_value: 17.0
+          sample_count: 42.0
+        }
+        buckets {
+          low_value: 17.0
+          high_value: 26.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 26.0
+          high_value: 34.0
+          sample_count: 50.0
+        }
+        buckets {
+          low_value: 34.0
+          high_value: 42.0
+          sample_count: 47.0
+        }
+        buckets {
+          low_value: 42.0
+          high_value: 62.0
+          sample_count: 47.0
+        }
+        buckets {
+          low_value: 62.0
+          high_value: 92.0
+          sample_count: 51.0
+        }
+        buckets {
+          low_value: 92.0
+          high_value: 139.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 139.0
+          high_value: 245.0
+          sample_count: 48.0
+        }
+        type: QUANTILES
+      }
+    }
+    path {
+      step: "MntGoldProds"
+    }
+  }
+  features {
+    num_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      mean: 2.935222672064777
+      std_dev: 2.3507803534688665
+      num_zeros: 7
+      median: 2.0
+      max: 15.0
+      histograms {
+        buckets {
+          high_value: 1.5
+          sample_count: 168.24742268041103
+        }
+        buckets {
+          low_value: 1.5
+          high_value: 3.0
+          sample_count: 171.75257731958638
+        }
+        buckets {
+          low_value: 3.0
+          high_value: 4.5
+          sample_count: 66.24615384615375
+        }
+        buckets {
+          low_value: 4.5
+          high_value: 6.0
+          sample_count: 55.75384615384621
+        }
+        buckets {
+          low_value: 6.0
+          high_value: 7.5
+          sample_count: 12.25
+        }
+        buckets {
+          low_value: 7.5
+          high_value: 9.0
+          sample_count: 5.75
+        }
+        buckets {
+          low_value: 9.0
+          high_value: 10.5
+          sample_count: 2.25
+        }
+        buckets {
+          low_value: 10.5
+          high_value: 12.0
+          sample_count: 7.75
+        }
+        buckets {
+          low_value: 12.0
+          high_value: 13.5
+          sample_count: 2.1
+        }
+        buckets {
+          low_value: 13.5
+          high_value: 15.0
+          sample_count: 1.9
+        }
+      }
+      histograms {
+        buckets {
+          high_value: 1.0
+          sample_count: 60.666666666666664
+        }
+        buckets {
+          low_value: 1.0
+          high_value: 1.0
+          sample_count: 53.666666666666664
+        }
+        buckets {
+          low_value: 1.0
+          high_value: 1.0
+          sample_count: 53.666666666666664
+        }
+        buckets {
+          low_value: 1.0
+          high_value: 2.0
+          sample_count: 48.0
+        }
+        buckets {
+          low_value: 2.0
+          high_value: 2.0
+          sample_count: 48.0
+        }
+        buckets {
+          low_value: 2.0
+          high_value: 3.0
+          sample_count: 76.0
+        }
+        buckets {
+          low_value: 3.0
+          high_value: 4.0
+          sample_count: 33.0
+        }
+        buckets {
+          low_value: 4.0
+          high_value: 4.0
+          sample_count: 33.0
+        }
+        buckets {
+          low_value: 4.0
+          high_value: 6.0
+          sample_count: 56.0
+        }
+        buckets {
+          low_value: 6.0
+          high_value: 15.0
+          sample_count: 32.0
+        }
+        type: QUANTILES
+      }
+    }
+    path {
+      step: "NumDealsPurchases"
+    }
+  }
+  features {
+    num_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      mean: 4.724696356275303
+      std_dev: 2.782448861872234
+      num_zeros: 13
+      median: 4.0
+      max: 11.0
+      histograms {
+        buckets {
+          high_value: 1.1
+          sample_count: 65.04954954954938
+        }
+        buckets {
+          low_value: 1.1
+          high_value: 2.2
+          sample_count: 55.048979862215276
+        }
+        buckets {
+          low_value: 2.2
+          high_value: 3.3000000000000003
+          sample_count: 67.04938725490194
+        }
+        buckets {
+          low_value: 3.3000000000000003
+          high_value: 4.4
+          sample_count: 71.0503739316241
+        }
+        buckets {
+          low_value: 4.4
+          high_value: 5.5
+          sample_count: 58.04854484474723
+        }
+        buckets {
+          low_value: 5.5
+          high_value: 6.6000000000000005
+          sample_count: 39.05036081864427
+        }
+        buckets {
+          low_value: 6.6000000000000005
+          high_value: 7.700000000000001
+          sample_count: 53.04644010195399
+        }
+        buckets {
+          low_value: 7.700000000000001
+          high_value: 8.8
+          sample_count: 27.049346092504003
+        }
+        buckets {
+          low_value: 8.8
+          high_value: 9.9
+          sample_count: 28.057017543859637
+        }
+        buckets {
+          low_value: 9.9
+          high_value: 11.0
+          sample_count: 30.54999999999999
+        }
+      }
+      histograms {
+        buckets {
+          high_value: 1.0
+          sample_count: 65.0
+        }
+        buckets {
+          low_value: 1.0
+          high_value: 2.0
+          sample_count: 55.0
+        }
+        buckets {
+          low_value: 2.0
+          high_value: 3.0
+          sample_count: 67.0
+        }
+        buckets {
+          low_value: 3.0
+          high_value: 4.0
+          sample_count: 35.5
+        }
+        buckets {
+          low_value: 4.0
+          high_value: 4.0
+          sample_count: 35.5
+        }
+        buckets {
+          low_value: 4.0
+          high_value: 5.0
+          sample_count: 58.0
+        }
+        buckets {
+          low_value: 5.0
+          high_value: 6.0
+          sample_count: 39.0
+        }
+        buckets {
+          low_value: 6.0
+          high_value: 7.0
+          sample_count: 53.0
+        }
+        buckets {
+          low_value: 7.0
+          high_value: 9.0
+          sample_count: 55.0
+        }
+        buckets {
+          low_value: 9.0
+          high_value: 11.0
+          sample_count: 31.0
+        }
+        type: QUANTILES
+      }
+    }
+    path {
+      step: "NumWebPurchases"
+    }
+  }
+  features {
+    num_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      mean: 3.0080971659919027
+      std_dev: 2.920667527873129
+      num_zeros: 91
+      median: 2.0
+      max: 28.0
+      histograms {
+        buckets {
+          high_value: 2.8
+          sample_count: 269.395505617978
+        }
+        buckets {
+          low_value: 2.8
+          high_value: 5.6
+          sample_count: 134.90014655593492
+        }
+        buckets {
+          low_value: 5.6
+          high_value: 8.399999999999999
+          sample_count: 63.90434782608705
+        }
+        buckets {
+          low_value: 8.399999999999999
+          high_value: 11.2
+          sample_count: 24.80392156862745
+        }
+        buckets {
+          low_value: 11.2
+          high_value: 14.0
+          sample_count: 0.05490196078431374
+        }
+        buckets {
+          low_value: 14.0
+          high_value: 16.799999999999997
+          sample_count: 0.05490196078431367
+        }
+        buckets {
+          low_value: 16.799999999999997
+          high_value: 19.599999999999998
+          sample_count: 0.05490196078431374
+        }
+        buckets {
+          low_value: 19.599999999999998
+          high_value: 22.4
+          sample_count: 0.05490196078431374
+        }
+        buckets {
+          low_value: 22.4
+          high_value: 25.2
+          sample_count: 0.05490196078431374
+        }
+        buckets {
+          low_value: 25.2
+          high_value: 28.0
+          sample_count: 0.7215686274509804
+        }
+      }
+      histograms {
+        buckets {
+          sample_count: 91.0
+        }
+        buckets {
+          high_value: 1.0
+          sample_count: 52.5
+        }
+        buckets {
+          low_value: 1.0
+          high_value: 1.0
+          sample_count: 52.5
+        }
+        buckets {
+          low_value: 1.0
+          high_value: 2.0
+          sample_count: 36.5
+        }
+        buckets {
+          low_value: 2.0
+          high_value: 2.0
+          sample_count: 36.5
+        }
+        buckets {
+          low_value: 2.0
+          high_value: 3.0
+          sample_count: 44.0
+        }
+        buckets {
+          low_value: 3.0
+          high_value: 4.0
+          sample_count: 51.0
+        }
+        buckets {
+          low_value: 4.0
+          high_value: 5.0
+          sample_count: 40.0
+        }
+        buckets {
+          low_value: 5.0
+          high_value: 7.0
+          sample_count: 53.0
+        }
+        buckets {
+          low_value: 7.0
+          high_value: 28.0
+          sample_count: 37.0
+        }
+        type: QUANTILES
+      }
+    }
+    path {
+      step: "NumCatalogPurchases"
+    }
+  }
+  features {
+    num_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      mean: 6.172064777327935
+      std_dev: 3.266308968729797
+      num_zeros: 1
+      median: 5.0
+      max: 13.0
+      histograms {
+        buckets {
+          high_value: 1.3
+          sample_count: 4.148453608247423
+        }
+        buckets {
+          low_value: 1.3
+          high_value: 2.6
+          sample_count: 48.14784268804876
+        }
+        buckets {
+          low_value: 2.6
+          high_value: 3.9000000000000004
+          sample_count: 80.1500451671183
+        }
+        buckets {
+          low_value: 3.9000000000000004
+          high_value: 5.2
+          sample_count: 116.65270615563277
+        }
+        buckets {
+          low_value: 5.2
+          high_value: 6.5
+          sample_count: 52.14671509281666
+        }
+        buckets {
+          low_value: 6.5
+          high_value: 7.800000000000001
+          sample_count: 29.154237288135576
+        }
+        buckets {
+          low_value: 7.800000000000001
+          high_value: 9.1
+          sample_count: 67.64920634920624
+        }
+        buckets {
+          low_value: 9.1
+          high_value: 10.4
+          sample_count: 31.150793650793595
+        }
+        buckets {
+          low_value: 10.4
+          high_value: 11.700000000000001
+          sample_count: 12.145205479452056
+        }
+        buckets {
+          low_value: 11.700000000000001
+          high_value: 13.0
+          sample_count: 52.654794520548016
+        }
+      }
+      histograms {
+        buckets {
+          high_value: 2.0
+          sample_count: 52.0
+        }
+        buckets {
+          low_value: 2.0
+          high_value: 3.0
+          sample_count: 80.0
+        }
+        buckets {
+          low_value: 3.0
+          high_value: 4.0
+          sample_count: 61.0
+        }
+        buckets {
+          low_value: 4.0
+          high_value: 5.0
+          sample_count: 28.0
+        }
+        buckets {
+          low_value: 5.0
+          high_value: 5.0
+          sample_count: 28.0
+        }
+        buckets {
+          low_value: 5.0
+          high_value: 6.0
+          sample_count: 52.0
+        }
+        buckets {
+          low_value: 6.0
+          high_value: 8.0
+          sample_count: 65.0
+        }
+        buckets {
+          low_value: 8.0
+          high_value: 9.0
+          sample_count: 32.0
+        }
+        buckets {
+          low_value: 9.0
+          high_value: 12.0
+          sample_count: 79.0
+        }
+        buckets {
+          low_value: 12.0
+          high_value: 13.0
+          sample_count: 17.0
+        }
+        type: QUANTILES
+      }
+    }
+    path {
+      step: "NumStorePurchases"
+    }
+  }
+  features {
+    num_stats {
+      common_stats {
+        num_non_missing: 494
+        min_num_values: 1
+        max_num_values: 1
+        avg_num_values: 1.0
+        num_values_histogram {
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          buckets {
+            low_value: 1.0
+            high_value: 1.0
+            sample_count: 49.4
+          }
+          type: QUANTILES
+        }
+        tot_num_values: 494
+      }
+      mean: 6.305668016194332
+      std_dev: 2.3243318353625564
+      num_zeros: 2
+      median: 7.0
+      max: 20.0
+      histograms {
+        buckets {
+          high_value: 2.0
+          sample_count: 40.0
+        }
+        buckets {
+          low_value: 2.0
+          high_value: 4.0
+          sample_count: 67.00000000000001
+        }
+        buckets {
+          low_value: 4.0
+          high_value: 6.0
+          sample_count: 118.00000000000055
+        }
+        buckets {
+          low_value: 6.0
+          high_value: 8.0
+          sample_count: 215.99999999999946
+        }
+        buckets {
+          low_value: 8.0
+          high_value: 10.0
+          sample_count: 50.99999999999999
+        }
+        buckets {
+          low_value: 10.0
+          high_value: 12.0
+          sample_count: 0.1111111111111111
+        }
+        buckets {
+          low_value: 12.0
+          high_value: 14.0
+          sample_count: 0.1111111111111111
+        }
+        buckets {
+          low_value: 14.0
+          high_value: 16.0
+          sample_count: 0.1111111111111111
+        }
+        buckets {
+          low_value: 16.0
+          high_value: 18.0
+          sample_count: 0.1111111111111111
+        }
+        buckets {
+          low_value: 18.0
+          high_value: 20.0
+          sample_count: 1.5555555555555554
+        }
+      }
+      histograms {
+        buckets {
+          high_value: 3.0
+          sample_count: 80.0
+        }
+        buckets {
+          low_value: 3.0
+          high_value: 4.0
+          sample_count: 27.0
+        }
+        buckets {
+          low_value: 4.0
+          high_value: 6.0
+          sample_count: 59.0
+        }
+        buckets {
+          low_value: 6.0
+          high_value: 6.0
+          sample_count: 59.0
+        }
+        buckets {
+          low_value: 6.0
+          high_value: 7.0
+          sample_count: 39.5
+        }
+        buckets {
+          low_value: 7.0
+          high_value: 7.0
+          sample_count: 39.5
+        }
+        buckets {
+          low_value: 7.0
+          high_value: 8.0
+          sample_count: 68.5
+        }
+        buckets {
+          low_value: 8.0
+          high_value: 8.0
+          sample_count: 68.5
+        }
+        buckets {
+          low_value: 8.0
+          high_value: 9.0
+          sample_count: 49.0
+        }
+        buckets {
+          low_value: 9.0
+          high_value: 20.0
+          sample_count: 4.0
+        }
+        type: QUANTILES
+      }
+    }
+    path {
+      step: "NumWebVisitsMonth"
+    }
+  }
+}
