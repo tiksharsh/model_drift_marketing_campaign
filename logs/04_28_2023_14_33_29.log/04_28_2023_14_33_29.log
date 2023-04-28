@@ -1,0 +1,315 @@
+[ 2023-04-28 14:33:29,131 ] 35 root - INFO - Training file path 
+ data/raw/marketing_campaign.csv
+[ 2023-04-28 14:33:29,132 ] 36 root - INFO - --------------------------------------------------------------------------------
+[ 2023-04-28 14:33:32,314 ] 58 root - INFO - Raw data 
+    Year_Birth   Education Marital_Status   Income  Kidhome  ... NumDealsPurchases  NumWebPurchases  NumCatalogPurchases  NumStorePurchases  NumWebVisitsMonth
+0        1957  Graduation         Single  58138.0        0  ...                 3                8                   10                  4                  7
+1        1954  Graduation         Single  46344.0        1  ...                 2                1                    1                  2                  5
+2        1965  Graduation       Together  71613.0        0  ...                 1                8                    2                 10                  4
+3        1984  Graduation       Together  26646.0        1  ...                 2                2                    0                  4                  6
+4        1981         PhD        Married  58293.0        1  ...                 5                5                    3                  6                  5
+
+[5 rows x 18 columns]
+[ 2023-04-28 14:33:32,314 ] 59 root - INFO - --------------------------------------------------------------------------------
+[ 2023-04-28 14:33:32,324 ] 74 root - INFO - Date Range: 2012-07-30 00:00:00 - 2014-06-29 00:00:00
+[ 2023-04-28 14:33:33,503 ] 99 root - INFO - early_data 
+    Year_Birth   Education Marital_Status   Income  Kidhome  Recency  ...  MntGoldProds  NumDealsPurchases  NumWebPurchases  NumCatalogPurchases  NumStorePurchases  NumWebVisitsMonth
+0        1970         PhD        Married  55158.0        1       72  ...            23                  4                7                    2                  5                  7
+1        1950    2n Cycle       Together  52203.0        0       36  ...            28                  1                8                    7                 11                  6
+2        1976  Graduation        Married   7500.0        1       19  ...            32                  5                4                    1                  2                  9
+3        1959      Master       Together  82576.0        0       66  ...            18                  1                2                    4                 12                  1
+4        1985    2n Cycle       Together   7500.0        1       98  ...            34                  4                2                    1                  3                  9
+
+[5 rows x 17 columns]
+[ 2023-04-28 14:33:33,503 ] 100 root - INFO - --------------------------------------------------------------------------------
+[ 2023-04-28 14:33:33,540 ] 101 root - INFO - latest_data 
+    Year_Birth   Education Marital_Status        Income  Kidhome  ...  NumDealsPurchases  NumWebPurchases  NumCatalogPurchases  NumStorePurchases  NumWebVisitsMonth
+0        1951  Graduation        Married           NaN        2  ...                  3                2                    1                  4                  6
+1        1964  Graduation        Married  73301.825259        0  ...                  4                2                    2                  8                  7
+2        1950         PhD         Single  59101.302078        1  ...                  3                2                    1                  3                  5
+3        1979  Graduation         Single  88810.465241        0  ...                  1                2                    2                 12                  1
+4        1978  Graduation        Married  81291.282213        1  ...                  1                7                    2                 10                  5
+
+[5 rows x 17 columns]
+[ 2023-04-28 14:33:33,540 ] 102 root - INFO - --------------------------------------------------------------------------------
+[ 2023-04-28 14:33:38,298 ] 132 root - INFO - visualize_statistics for early_data_stats 
+ None
+[ 2023-04-28 14:33:38,298 ] 133 root - INFO - --------------------------------------------------------------------------------
+[ 2023-04-28 14:33:43,147 ] 153 root - INFO - display_schema for early_data_schema 
+ None
+[ 2023-04-28 14:33:43,147 ] 154 root - INFO - --------------------------------------------------------------------------------
+[ 2023-04-28 14:33:43,193 ] 170 root - INFO - display_schema for MODIFIED early_data_schema 
+ None
+[ 2023-04-28 14:33:43,193 ] 171 root - INFO - --------------------------------------------------------------------------------
+[ 2023-04-28 14:33:43,198 ] 186 root - INFO - visualizing anamolies early_data_schema 
+ None
+[ 2023-04-28 14:33:43,199 ] 187 root - INFO - --------------------------------------------------------------------------------
+[ 2023-04-28 14:33:53,797 ] 196 root - INFO - display_schema for drift_anomalies 
+ None
+[ 2023-04-28 14:33:57,187 ] 197 root - INFO - --------------------------------------------------------------------------------
+[ 2023-04-28 14:34:14,654 ] 211 root - INFO - --------------------------------------------------------------------------------
+[ 2023-04-28 14:34:15,361 ] 212 root - INFO - drift_detected 
+ True
+[ 2023-04-28 14:34:15,980 ] 213 root - INFO - --------------------------------------------------------------------------------
+[ 2023-04-28 14:34:17,469 ] 214 root - INFO - drift_anomalies 
+ baseline {
+  feature {
+    name: "Year_Birth"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "Education"
+    type: BYTES
+    domain: "Education"
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "Marital_Status"
+    type: BYTES
+    domain: "Marital_Status"
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "Income"
+    value_count {
+      min: 1
+      max: 1
+    }
+    type: FLOAT
+    presence {
+      min_count: 1
+    }
+  }
+  feature {
+    name: "Kidhome"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "Recency"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "MntWines"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "MntFruits"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "MntMeatProducts"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "MntFishProducts"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "MntSweetProducts"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "MntGoldProds"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "NumDealsPurchases"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "NumWebPurchases"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "NumCatalogPurchases"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "NumStorePurchases"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "NumWebVisitsMonth"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  string_domain {
+    name: "Education"
+    value: "2n Cycle"
+    value: "Basic"
+    value: "Graduation"
+    value: "Master"
+    value: "PhD"
+  }
+  string_domain {
+    name: "Marital_Status"
+    value: "Absurd"
+    value: "Divorced"
+    value: "Married"
+    value: "Single"
+    value: "Together"
+    value: "Widow"
+    value: "YOLO"
+  }
+}
+anomaly_info {
+  key: "Marital_Status"
+  value {
+    description: "Examples contain values missing from the schema: Alone (<1%). "
+    severity: ERROR
+    short_description: "Unexpected string values"
+    reason {
+      type: ENUM_TYPE_UNEXPECTED_STRING_VALUES
+      short_description: "Unexpected string values"
+      description: "Examples contain values missing from the schema: Alone (<1%). "
+    }
+    path {
+      step: "Marital_Status"
+    }
+  }
+}
+anomaly_name_format: SERIALIZED_PATH
+
+[ 2023-04-28 14:34:17,470 ] 215 root - INFO - --------------------------------------------------------------------------------
+[ 2023-04-28 14:34:17,470 ] 229 root - INFO - stop pipeline

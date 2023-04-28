@@ -16,7 +16,10 @@ from dataclasses import dataclass
 from tensorflow.python.lib.io import file_io
 from google.protobuf import text_format
 
-sys.path.append("schema-stats")
+# sys.path.append("src")
+
+from logger import logging
+from exception import CustomException
 
 
 @dataclass
@@ -29,10 +32,18 @@ class ModelDriftConfig:
        'MntGoldProds', 'NumDealsPurchases', 'NumWebPurchases',
        'NumCatalogPurchases', 'NumStorePurchases', 'NumWebVisitsMonth']
 
-    stats_path = os.path.join("schema-stats",'schema.txtpb')
-    schema_path = os.path.join("schema-stats",'data_stats.txtpb')
-    # schema_path = "./schema.txtpb"
-    # stats_path = "./data_stats.txtpb"
+    directory = 'schema-stats'
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    stats_path = os.path.join(directory, 'schema.txtpb')   
+    schema_path = os.path.join(directory,"data_stats.txtpb")
+
+
+    logging.info(f"Training file path \n {train_df_path}")
+    logging.info('-'*80)
+
+
         
 
 class ModelDrift:
@@ -44,9 +55,9 @@ class ModelDrift:
         
         df = pd.read_csv(self.drift_config.train_df_path, sep='\t')
         df = df[self.drift_config.col]
-        print('-'*80)
-        print(df.head())
-        print('-'*80)
+        
+        logging.info(f"Raw data \n {df.head()}")
+        logging.info('-'*80)
 
         return df
 
@@ -60,15 +71,15 @@ class ModelDrift:
         min_date = df['Dt_Customer'].min()
         max_date = df['Dt_Customer'].max()
 
-        # print out the range of dates
-        print('Date Range: {} - {}'.format(min_date, max_date))
+        # logging.info out the range of dates
+        logging.info('Date Range: {} - {}'.format(min_date, max_date))
         # set the date column as the index
         df.set_index('Dt_Customer', inplace=True)
 
         # group the DataFrame by yearly frequency
         years = df.groupby(pd.Grouper(freq = 'Y'))
 
-        # print out the data for each quarter
+        # logging.info out the data for each quarter
         datasets = []
         for i, (year,data) in enumerate(years):
             datasets.append(data)
@@ -85,6 +96,11 @@ class ModelDrift:
 
         # increase the number of married costumers in 2014 by 20%
         latest_data['Marital_Status'] = latest_data['Marital_Status'].apply(self.future_marital_status)
+
+        logging.info(f"early_data \n {early_data.head()}")
+        logging.info('-'*80)
+        logging.info(f"latest_data \n {latest_data.head()}")
+        logging.info('-'*80)
         
         return early_data, latest_data
     
@@ -112,7 +128,10 @@ class ModelDrift:
         # generate statistics for 2014
         latest_data_stats = tfdv.generate_statistics_from_dataframe(latest_data)
         # visualize statistics
-        tfdv.visualize_statistics(early_data_stats)
+        # tfdv.visualize_statistics(early_data_stats)
+
+        logging.info(f"visualize_statistics for early_data_stats \n {tfdv.visualize_statistics(early_data_stats)}")
+        logging.info('-'*80)
 
         return early_data_stats, latest_data_stats
     
@@ -123,11 +142,17 @@ class ModelDrift:
 
         early_data_schema = tfdv.infer_schema(statistics = early_data_stats)
 
-        print('-'*80)
-        print('visualizing schema')
+        # save schema to file 
+        tfdv.write_schema_text(early_data_schema, self.drift_config.schema_path)
+        # save statistics to file
+        tfdv.write_stats_text(early_data_stats, self.drift_config.stats_path)
 
+    
         #display the schema
         tfdv.display_schema(schema=early_data_schema)
+
+        logging.info(f"display_schema for early_data_schema \n {tfdv.display_schema(schema=early_data_schema)}")
+        logging.info('-'*80)
 
         return early_data_schema
 
@@ -139,12 +164,12 @@ class ModelDrift:
         tfdv.set_domain(early_data_schema, 'Year_Birth', schema_pb2.IntDomain(name="Year_Birth", min=1900, max=2015))
         # make income feature required
         tfdv.get_feature(early_data_schema, "Income").presence.min_fraction = 1
-
-        print('-'*80)
-        print('visualizing NEW schema')
-
+    
         # dispaly the new schema
         tfdv.display_schema(schema=early_data_schema)
+
+        logging.info(f"display_schema for MODIFIED early_data_schema \n {tfdv.display_schema(schema=early_data_schema)}")
+        logging.info('-'*80)
     
     def visualizing_anamolies(self, early_data_schema, early_data_stats, latest_data_stats):
 
@@ -155,22 +180,22 @@ class ModelDrift:
         martial_status.drift_comparator.infinity_norm.threshold = 0.1
         martial_status.distribution_constraints.min_domain_mass = 0.9
 
-        print('-'*80)
-        print('visualizing anamolies')
-
         # overlay both statistics on top of each other.
         tfdv.visualize_statistics(lhs_statistics=early_data_stats, rhs_statistics=latest_data_stats,
                           lhs_name='2012', rhs_name='2014')
+        
+        logging.info(f"visualizing anamolies early_data_schema \n {tfdv.visualize_statistics(lhs_statistics=early_data_stats, rhs_statistics=latest_data_stats,lhs_name='2012', rhs_name='2014')}")
+        logging.info('-'*80)
         
     def detect_anomalies(self, latest_data_stats, early_data_schema, early_data_stats):
 
         drift_anomalies = tfdv.validate_statistics(latest_data_stats, schema=early_data_schema, previous_statistics= early_data_stats)
 
-        print('-'*80)
-        print('displaying anamolies')
-
         # display the differences between the two datasets
         tfdv.display_anomalies(drift_anomalies)
+
+        logging.info(f"display_schema for drift_anomalies \n {tfdv.display_anomalies(drift_anomalies)}")
+        logging.info('-'*80)
 
     def detect_data_drift(self, new_data: pd.DataFrame, schema_path:str, previous_stats_path: str) -> bool:
         """
@@ -184,19 +209,23 @@ class ModelDrift:
         drift_anomalies = tfdv.validate_statistics(new_stats, schema=schema, previous_statistics=previous_stats)
         drift_detected = len(drift_anomalies.anomaly_info) > 0
 
+        logging.info('-'*80)
+        logging.info(f"drift_detected \n {drift_detected}")
+        logging.info('-'*80)
+        logging.info(f"drift_anomalies \n {drift_anomalies}")
+        logging.info('-'*80)
+
         return drift_detected, drift_anomalies
     
     def action_on_data_drift(self, latest_data):
 
-        # drift_detected, drift_anomalies = self.detect_data_drift(latest_data, './schema.txtpb', './data_stats.txtpb') 
-        sc_path = '/Users/gadeh/Documents/ml/projects/model-drift-marketing-campaign/schema-stats/schema.txtpb'
-        st_path = '/Users/gadeh/Documents/ml/projects/model-drift-marketing-campaign/schema-stats/data_stats.txtpb' 
-        drift_detected, drift_anomalies = self.detect_data_drift(latest_data, sc_path, st_path )
+
+        drift_detected, drift_anomalies = self.detect_data_drift(latest_data, self.drift_config.schema_path, self.drift_config.stats_path )
 
         if drift_detected:
-            print("stop pipeline")
+            logging.info("stop pipeline")
         else:
-            print("proceed")
+            logging.info("proceed")
     
 
 
@@ -205,8 +234,7 @@ class ModelDrift:
 
 
 if __name__ == "__main__":
-    # obj_data_read = ModelDrift()
-    # read_data = obj_data_read.data_read()
+
     obj = ModelDrift()
     early_data, latest_data = obj.data_split()
     early_data_stats_obj, latest_data_stats_obj = obj.visualize_stats(early_data, latest_data)
