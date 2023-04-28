@@ -13,6 +13,11 @@ import tensorflow.python.lib.io as file_io
 
 from dataclasses import dataclass
 
+from tensorflow.python.lib.io import file_io
+from google.protobuf import text_format
+
+sys.path.append("schema-stats")
+
 
 @dataclass
 
@@ -23,6 +28,12 @@ class ModelDriftConfig:
        'MntMeatProducts', 'MntFishProducts', 'MntSweetProducts',
        'MntGoldProds', 'NumDealsPurchases', 'NumWebPurchases',
        'NumCatalogPurchases', 'NumStorePurchases', 'NumWebVisitsMonth']
+
+    stats_path = os.path.join("schema-stats",'schema.txtpb')
+    schema_path = os.path.join("schema-stats",'data_stats.txtpb')
+    # schema_path = "./schema.txtpb"
+    # stats_path = "./data_stats.txtpb"
+        
 
 class ModelDrift:
 
@@ -160,6 +171,32 @@ class ModelDrift:
 
         # display the differences between the two datasets
         tfdv.display_anomalies(drift_anomalies)
+
+    def detect_data_drift(self, new_data: pd.DataFrame, schema_path:str, previous_stats_path: str) -> bool:
+        """
+        compare new data statistics with baseline data.
+        """
+
+        previous_stats = tfdv.load_stats_text(previous_stats_path)
+        schema = tfdv.load_schema_text(schema_path)
+        options = tfdv.StatsOptions(schema=schema, infer_type_from_schema=True)
+        new_stats = tfdv.generate_statistics_from_dataframe(new_data, stats_options=options)
+        drift_anomalies = tfdv.validate_statistics(new_stats, schema=schema, previous_statistics=previous_stats)
+        drift_detected = len(drift_anomalies.anomaly_info) > 0
+
+        return drift_detected, drift_anomalies
+    
+    def action_on_data_drift(self, latest_data):
+
+        # drift_detected, drift_anomalies = self.detect_data_drift(latest_data, './schema.txtpb', './data_stats.txtpb') 
+        sc_path = '/Users/gadeh/Documents/ml/projects/model-drift-marketing-campaign/schema-stats/schema.txtpb'
+        st_path = '/Users/gadeh/Documents/ml/projects/model-drift-marketing-campaign/schema-stats/data_stats.txtpb' 
+        drift_detected, drift_anomalies = self.detect_data_drift(latest_data, sc_path, st_path )
+
+        if drift_detected:
+            print("stop pipeline")
+        else:
+            print("proceed")
     
 
 
@@ -177,4 +214,5 @@ if __name__ == "__main__":
     obj.modifying_data(early_data_schema_obj) 
     obj.visualizing_anamolies(early_data_schema_obj, early_data_stats_obj, latest_data_stats_obj)
     obj.detect_anomalies(latest_data_stats_obj, early_data_schema_obj, early_data_stats_obj)
+    obj.action_on_data_drift(latest_data)
         
